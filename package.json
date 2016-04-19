@@ -1,0 +1,54 @@
+{
+  "name": "skoleskyss-behandling-api",
+  "version": "1.0.0",
+  "description": "API for skoleskyss behandling",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "bugs": {
+    "url": "https://github.com/maccyber/skoleskyss-behandling-api/issues"
+  },
+  "homepage": "https://github.com/maccyber/skoleskyss-behandling-api",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.4.1"
+  },
+  "scripts": {
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "start": "node standalone.js",
+    "generate": "node utils/generate-test-token.js",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "maccyber"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maccyber/skoleskyss-behandling-api.git"
+  },
+  "standard": {
+    "ignore": [
+      "public"
+    ]
+  },
+  "devDependencies": {
+    "coveralls": "2.11.9",
+    "standard": "6.0.8",
+    "tap": "5.7.1"
+  },
+  "dependencies": {
+    "hapi": "13.3.0",
+    "hapi-auth-jwt2": "5.8.0",
+    "inert": "^3.2.0",
+    "joi": "^8.0.5",
+    "jsonwebtoken": "5.7.0",
+    "lout": "^9.0.0",
+    "mongojs": "^2.3.0",
+    "vision": "^4.1.0"
+  }
+}

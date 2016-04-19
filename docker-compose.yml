@@ -1,0 +1,16 @@
+webserver:
+  # image: telemark/skoleskyss-behandling-api
+  build: .
+  environment:
+    SERVER_PORT: 3000
+    JWT_SECRET: passwordpasswordpasswordpassword
+    DB_HOST: dbserver
+    DB_PORT: 27017
+    DB_NAME: tfk
+    DB_COLLECTION: applications
+  ports:
+    - "3000:3000"
+  links:
+    - dbserver
+dbserver:
+  image: mongo:3.2.1
