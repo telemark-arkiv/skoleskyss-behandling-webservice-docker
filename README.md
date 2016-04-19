@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/telemark/skoleskyss-behandling-api.svg?branch=master)](https://travis-ci.org/telemark/skoleskyss-behandling-api)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-# api.maccyber.io
+# skoleskyss-behandling-api
 ...
 
 ## Docker
