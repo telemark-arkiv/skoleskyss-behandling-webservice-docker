@@ -7,7 +7,8 @@ var validateAPI = require('./lib/validate-api')
 var apiService = require('./index')
 
 server.connection({
-  port: config.SERVER_PORT
+  port: config.SERVER_PORT,
+  cors: true
 })
 
 server.register([require('vision'), require('inert'), { register: require('lout') }], function (err) {
