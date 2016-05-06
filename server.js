@@ -8,7 +8,9 @@ var apiService = require('./index')
 
 server.connection({
   port: config.SERVER_PORT,
-  cors: true
+  routes: {
+    cors: true
+  }
 })
 
 server.register([require('vision'), require('inert'), { register: require('lout') }], function (err) {
