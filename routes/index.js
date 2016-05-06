@@ -17,6 +17,9 @@ var routes = [
     method: 'GET',
     path: '/applications',
     config: {
+      cors:{
+        origin:['*']
+      },
       auth: false,
       handler: handlers.getApplications,
       description: 'List of applications'
