@@ -42,7 +42,7 @@
     "tap": "5.7.1"
   },
   "dependencies": {
-    "hapi": "13.3.0",
+    "hapi": "13.4.0",
     "hapi-auth-jwt2": "6.0.0",
     "inert": "^4.0.0",
     "joi": "^8.0.5",
