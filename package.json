@@ -46,7 +46,7 @@
     "hapi-auth-jwt2": "6.0.0",
     "inert": "^4.0.0",
     "joi": "^8.0.5",
-    "jsonwebtoken": "6.2.0",
+    "jsonwebtoken": "7.0.0",
     "lout": "^9.0.0",
     "mongojs": "^2.3.0",
     "vision": "^4.1.0"
