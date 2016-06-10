@@ -15,11 +15,11 @@ function getPublicResponse (request, reply) {
 
 function getApplications (request, reply) {
   var query = {}
-  if (request.params) {
+  if (request.params.from && request.params.to) {
     query = {
       timestamp: {
         $gte: request.params.from,
-        $lt: request.params.to
+        $lte: request.params.to
       }
     }
   }
