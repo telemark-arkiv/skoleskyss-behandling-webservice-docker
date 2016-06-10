@@ -26,6 +26,18 @@ var routes = [
     }
   },
   {
+    method: 'GET',
+    path: '/applications/{from}/{to}',
+    config: {
+      cors: {
+        origin: ['*']
+      },
+      auth: false,
+      handler: handlers.getApplications,
+      description: 'List of applications'
+    }
+  },
+  {
     method: 'POST',
     path: '/applications',
     config: {

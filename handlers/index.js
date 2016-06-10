@@ -14,7 +14,16 @@ function getPublicResponse (request, reply) {
 }
 
 function getApplications (request, reply) {
-  applications.find({}, function (error, data) {
+  var query = {}
+  if (request.params) {
+    query = {
+      timestamp: {
+        $gte: request.params.from,
+        $lt: request.params.to
+      }
+    }
+  }
+  applications.find(query, function (error, data) {
     reply(error || data)
   })
 }
