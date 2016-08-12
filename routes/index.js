@@ -20,7 +20,6 @@ var routes = [
       cors: {
         origin: ['*']
       },
-      auth: false,
       handler: handlers.getApplications,
       description: 'List of applications'
     }
@@ -32,7 +31,6 @@ var routes = [
       cors: {
         origin: ['*']
       },
-      auth: false,
       handler: handlers.getApplications,
       description: 'List of applications'
     }
@@ -41,7 +39,6 @@ var routes = [
     method: 'POST',
     path: '/applications',
     config: {
-      auth: false,
       handler: handlers.addApplications,
       description: 'Add applications',
       validate: {
