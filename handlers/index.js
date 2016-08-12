@@ -18,11 +18,12 @@ function getApplications (request, reply) {
   if (request.params.from && request.params.to) {
     query = {
       timestamp: {
-        $gte: request.params.from,
-        $lte: request.params.to
+        $gte: parseInt(request.params.from),
+        $lte: parseInt(request.params.to)
       }
     }
   }
+  console.log(query)
   applications.find(query, function (error, data) {
     reply(error || data)
   })
