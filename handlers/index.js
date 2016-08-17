@@ -24,7 +24,7 @@ function getApplications (request, reply) {
     }
   }
   console.log(query)
-  applications.find(query, function (error, data) {
+  applications.find(query, { '_id': 0 }, function (error, data) {
     reply(error || data)
   })
 }
