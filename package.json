@@ -1,6 +1,6 @@
 {
   "name": "skoleskyss-behandling-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "API for skoleskyss behandling",
   "license": "MIT",
   "author": {
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/maccyber/skoleskyss-behandling-api",
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.1"
+    "node": ">=4.6.0"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
