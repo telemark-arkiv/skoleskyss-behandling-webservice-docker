@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/telemark/skoleskyss-behandling-webservice-docker.svg?branch=master)](https://travis-ci.org/telemark/skoleskyss-behandling-webservice-docker)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # skoleskyss-behandling-api
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/skoleskyss-behandling-webservice-docker.svg)](https://greenkeeper.io/)
 ...
 
 ## Docker
