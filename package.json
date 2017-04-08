@@ -37,17 +37,17 @@
     ]
   },
   "devDependencies": {
-    "coveralls": "2.11.16",
     "standard": "10.0.1",
+    "coveralls": "2.13.0",
     "tap": "10.2.0"
   },
   "dependencies": {
-    "hapi": "16.1.0",
+    "hapi": "16.1.1",
     "hapi-auth-jwt2": "7.2.4",
     "inert": "^4.0.0",
     "joi": "^10.0.0",
     "jsonwebtoken": "7.3.0",
-    "lout": "^9.0.0",
+    "lout": "^10.0.1",
     "mongojs": "^2.3.0",
     "vision": "^4.1.0"
   }
