@@ -1,6 +1,6 @@
 {
   "name": "skoleskyss-behandling-api",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "API for skoleskyss behandling",
   "license": "MIT",
   "author": {
@@ -40,7 +40,8 @@
     "standard": "10.0.1",
     "coveralls": "2.13.0",
     "tap": "10.3.1"
-  "dependencies": {
+     },
+    "dependencies": {
     "hapi": "16.1.1",
     "hapi-auth-jwt2": "7.2.4",
     "inert": "^4.0.0",
